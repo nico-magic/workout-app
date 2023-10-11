@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.workoutapprebornkotlin.fragments.landingFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_startWorkoutFragment"
+            app:destination="@id/startWorkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showExercisesFragment"
+        android:name="com.example.workoutapprebornkotlin.fragments.list.showExercisesFragment"
+        android:label="Exercises"
+        tools:layout="@layout/fragment_show_exercises" >
+        <action
+            android:id="@+id/action_showExercisesFragment_to_addExerciseFragment"
+            app:destination="@id/addExerciseFragment" />
+        <action
+            android:id="@+id/action_showExercisesFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExerciseFragment"
+        android:name="com.example.workoutapprebornkotlin.fragments.add.AddExerciseFragment"
+        android:label="Add Exercise"
+        tools:layout="@layout/fragment_add_exercise" >
+        <action
+            android:id="@+id/action_addExerciseFragment_to_showExercisesFragment"
+            app:destination="@id/showExercisesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.workoutapprebornkotlin.fragments.update.UpdateFragment"
+        android:label="Update Exercise"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_showExercisesFragment"
+            app:destination="@id/showExercisesFragment" />
+        <argument android:name="currentExercise"
+            app:argType="com.example.workoutapprebornkotlin.model.Exercise" />
+    </fragment>
+    <fragment
+        android:id="@+id/startWorkoutFragment"
+        android:name="com.example.workoutapprebornkotlin.fragments.start.StartWorkoutFragment"
+        android:label="Workout!"
+        tools:layout="@layout/fragment_start_workout" >
+        <action
+            android:id="@+id/action_startWorkoutFragment_to_landingFragment"
+            app:destination="@id/landingFragment" />
+    </fragment>
+</navigation>
