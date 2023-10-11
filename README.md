@@ -8,7 +8,7 @@ Functions:
   Viewing exercise list,
   Starting a workout - switching between exercises
 
-<img src="https://github.com/nico-magic/workout-app/assets/93150987/73ef35e5-5932-4b32-9b33-09c534239be7" width="100" height="100">
+<img src="https://github.com/nico-magic/workout-app/assets/93150987/73ef35e5-5932-4b32-9b33-09c534239be7" width="270" height="600">
 
 
 ![obrazek](https://github.com/nico-magic/workout-app/assets/93150987/9c18f6b3-56f7-4957-98e7-774de8514c98)
